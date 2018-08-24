@@ -1,0 +1,47 @@
+
+#cart_logobox{background:#fff;border-bottom:2px solid #f30;}
+.cart_logo{height: 80px;background:url("../img/logo/juanpilogo.png") no-repeat;margin-top:10px;}
+
+
+
+/*商品部分*/
+/*标题*/
+#cart_mainbox{background:#ddd;}
+
+.cart_title{height: 45px;background:#ddd;line-height: 45px;color:#a3a3a3;text-align: center;}
+.cart_title div{float:left;}
+.cart_title div:nth-of-type(1){width: 230px;margin:0 80px;}
+.cart_title div:nth-of-type(2){width: 230px;}
+.cart_title div:nth-of-type(3){width: 170px;}
+.cart_title div:nth-of-type(4){width: 215px;}
+.cart_title div:nth-of-type(5){width: 155px;}
+
+/*商品列*/
+.cart_list{background:#fff;padding: 20px 0;}
+
+.cart_goods{height: 128px;text-align: center;line-height: 128px;border:1px solid #ddd;background:#F9F9F9;margin:0 20px 20px;}
+.cart_goods>div{float:left;}
+.cart_goods>div span{margin: 0 5px;}
+.cart_goods>div:nth-of-type(1){width: 40px;}
+.cart_goods>div:nth-of-type(2){width: 100px;}
+.cart_goods>div:nth-of-type(2) img{width: 100px;}
+.cart_goods>div:nth-of-type(3){width: 230px;line-height: 50px;color:#ddd;}
+.cart_goods>div:nth-of-type(4){width: 230px;}
+.cart_goods_price_color{color:#ddd;}
+.cart_goods>div:nth-of-type(5){width: 170px;padding-top: 47px;}
+.goods_number{width: 100px;height: 28px;border:1px solid #ddd;line-height: 12px;margin-left: 40px;}
+.goods_number input{padding:5px;font-size: 14px;background:#fff;}
+.goods_number input:nth-of-type(2){display:inline-block;width: 50px;background:#eee;border-right: 1px solid #ddd;border-right: 1px solid #ddd;}
+
+.cart_goods>div:nth-of-type(6){width: 215px;color:#f30;}
+.cart_goods>div:nth-of-type(7){width: 155px;font-size: 20px;color:#dedede;padding-left: 100px;}
+
+/*结算总价*/
+.cart_list_total{height: 50px;border-top:1px solid #aaa;background:#fff;padding:0 20px;}
+.cart_list_total div{float:left;}
+.cart_list_total div:nth-of-type(1){width: 80px;margin:20px;}
+.cart_list_total div:nth-of-type(2){width: 500px;line-height: 48px;margin-left: 300px;text-align: right;}
+.cart_list_total div:nth-of-type(2) span{margin:0 5px;}
+.cart_list_total div:nth-of-type(3){width: 200px;float:right;}
+.cart_list_sum{color:#f30;font-size: 20px;}
+.cart_total_btn{display:block;width: 200px;height: 48px;background:#f30;color:#fff;font-size: 20px;}

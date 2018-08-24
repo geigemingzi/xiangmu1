@@ -1,0 +1,70 @@
+
+#datails{}
+
+/*商品路径显示*/
+.datails_goods_way{height: 21px;margin:20px 0;}
+.datails_goods_way a{padding:0 10px;}
+
+
+/*商品展示*/
+.goods_show{overflow: hidden;}
+
+/*放大镜部分*/
+.datails_zoombox{position:relative; width: 480px;height: 480px;padding-top: 30px;}
+
+.small img{width: 58px;margin-bottom: 10px;border:1px solid #ddd;}
+.datails_zoommin{float:left;width: 60px;height: 320px;margin-right: 10px;}
+.datails_zoommax{float:left;width: 320px;height: 320px;}
+
+.datails_zoomdown{width: 480px;height: 80px;padding-left:60px;color:#dedede;}
+.datails_zoomdown div{margin-top:20px;}
+.datails_zoomdown span{margin-right: 10px;}
+.datails_zoomdown span i{color:#f30;margin-left: 10px;}
+
+/*中间部分*/
+.goods_showtxt{width: 460px;height: 480px;margin-left: 20px;}
+.goods_showtxt h3{height: 27px;font-size: 20px;font-weight: bold;}
+.goods_showprice{height: 82px;background: #FEEFEF;padding:10px;}
+.goods_price_1{height: 32px;line-height: 32px;}
+.goods_price_1>span:nth-of-type(1){font-size: 20px;color:#f30;margin-right: 20px;}
+.goods_price_2{height: 32px;line-height: 32px;}
+.goods_price_2>span:nth-of-type(1){margin-right: 15px;}
+.goods_price_2>span:nth-of-type(2){padding:2px 5px;background:#FE8F0D;color:#fff;border-radius:3px;margin-right: 10px;}
+
+.goods_showsite{height: 32px;margin:6px 10px;line-height: 32px; border-bottom:1px dotted #aaa;}
+.goods_showsite>div{float:left;}
+.goods_showsite>div:nth-of-type(1){width: 50px;color:#ccc;}
+.goods_showsite>div:nth-of-type(2){width: 100px;}
+
+.goods_showsize{padding: 10px;}
+.goods_showsize li{margin-top: 20px;}
+.goods_showsize li>div{display: inline-block;vertical-align: middle;}
+.goods_showsize li>span{display:inline-block;width: 50px;height: 32px;color:#ddd;vertical-align: middle;line-height: 32px;}
+.goods_showsize li:nth-of-type(1){height: 44px;margin-top:20px;}
+.goods_showsize li:nth-of-type(1)>div>span{display:inline-block;width: 70px;height: 32px;border:1px solid #f30;}
+.exhibits_min_img img{height: 30px;}
+
+.goods_showsize li:nth-of-type(2)>div>span{display:inline-block;width: 60px;height: 32px;border:1px solid #ccc;background:#eee; line-height: 32px;text-align: center;}
+
+/*数量的加减*/
+#goods_number{border:1px solid #ddd;}
+#goods_number input{padding:5px 10px;font-size: 14px;background:#fff;}
+#goods_number input:nth-of-type(2){display:inline-block;width: 50px;background:#eee;border-right: 1px solid #ddd;border-right: 1px solid #ddd;}
+
+/*购买和加入购物车*/
+.goods_showsize li:nth-of-type(4)>div>button{display:inline-block;width: 156px;height: 40px;line-height: 40px;text-align: center;font-size: 20px;border-radius:4px;}
+.goods_showpay{background:rgba(254,239,239,1);color:#f30;border:1px solid #f20;}
+.goods_showpay:hover{background:rgba(254,239,239,0.1);}
+.goods_showcar{background:rgba(246,9,1,0.6);color:#fff;margin-left: 20px;}
+.goods_showcar:hover{background:rgba(246,9,1,1);}
+
+
+
+
+/*认证部分*/
+.goods_approve{width: 193px;height: 380px;border:1px solid #ddd;margin-left: 30px;padding:0 20px;line-height: 24px;color:#999999;}
+.goods_approve div{border-bottom:1px dotted #ddd;padding:20px 0;}
+.goods_approve div i{margin: 0 10px;color:#f30;}
+.goods_approve div:nth-of-type(1){text-align: center;}
+.goods_approve div:nth-of-type(3){border:0 none;}
+.goods_approve div:nth-of-type(3) a{color:#999999;}

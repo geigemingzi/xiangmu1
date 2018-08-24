@@ -1,0 +1,19 @@
+ul{list-style: none;padding:0;margin:0;}
+.wd-carousel img{display: block;}
+.wd-carousel{position:relative;width:810px;height:320px;overflow:hidden;}
+.wd-carousel ul{position:absolute;overflow:hidden;}
+
+/*水平移动*/
+.wd-carousel ul.horizontal li{float:left;}
+/*淡入淡出*/
+.wd-carousel ul.fade li{position: absolute;left:0;top:0;}
+
+
+.wd-carousel .page{position:absolute;right:0;bottom:0;padding:8px;}
+.wd-carousel .page span{display:inline-block;margin:0 5px;width:20px;height:20px;line-height:20px;background-color:rgba(255,255,255,.5);text-align:center;color:#eee;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.6);}
+.wd-carousel .page span.active{background-color: rgba(255,191,0,.6);}
+
+.wd-carousel > span{display:none;position:absolute;left:0;top:50%;transform: translate(0,-50%);padding:50px 16px;background-color: rgba(204,204,204,0.4);color:#eee;}
+.wd-carousel .btn-next{left:auto;right:0;}
+.wd-carousel > span:hover{background-color: rgba(102,102,102,0.4);}
+.wd-carousel:hover > span{display: block;}

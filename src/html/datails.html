@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>列表页</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../lib/jQuery-wdzoom/jQuery.wdzoom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/w_header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/datails.css" />
+
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../lib/jQuery-wdzoom/jQuery.wdzoom.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="datails_toolbar"></div>
+    <div class="datails_header"></div>
+    <div class="datails_r_nav">
+              <!-- 右边的页面导航 -->
+    <div id="t_r_nav">
+        <div><i class="glyphicon glyphicon-user"></i></div>
+        <div id="w_header_car">
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+        </div>
+        <div><i  class="glyphicon glyphicon-heart"></i></div>
+        <div><i class="glyphicon glyphicon-gift"></i></div>
+        <div><i class="glyphicon glyphicon-pencil"></i></div>
+        <div><i class="glyphicon glyphicon-qrcode"></i></div>
+    </div>
+    </div>
+    
+    <!-- datails主要部分 -->
+    <div id="datails">
+        <div class="w_container">
+            <div class="datails_goods_way">
+                <div>
+                    <a href="">首页</a><i class="glyphicon glyphicon-chevron-right"></i><a href="">女装</a><i class="glyphicon glyphicon-chevron-right"></i><a href="">外套</a>
+                </div>
+            </div>
+            <div class="goods_show">
+                <div class="datails_zoombox fl">
+                    <!-- 小图 -->
+                    <div class="small datails_zoommin">
+                        <img src="../img/goodsImg/g_huazhuang (1).jpg" data-big="../img/goodsImg/g_huazhuang (1).jpg">
+                        <img src="../img/goodsImg/g_huazhuang (2).jpg" data-big="../img/goodsImg/g_huazhuang (2).jpg">
+                        <img src="../img/goodsImg/g_huazhuang (3).jpg" data-big="../img/goodsImg/g_huazhuang (3).jpg">
+                    </div>
+
+                    <!-- 大图 -->
+                    <div class="wd_goods datails_zoommax">
+                        <img class="exhibits_img" src="../img/goodsImg/g_huazhuang (4).jpg" data-big="../img/goodsImg/g_huazhuang (4).jpg" />
+                    </div>
+                    <div class="fl datails_zoomdown">
+                        <div>
+                            <span>100%人工质检</span>
+                            <span>全国包邮低价保障</span>
+                            <span>7天无理由退货</span>
+                        </div>
+                        <div>
+                            <span><i class="glyphicon glyphicon-heart"></i>收藏</span>
+                            <span><i class="glyphicon glyphicon-share-alt"></i>分享</span>
+                            <span>举报</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods_showtxt fl">
+                    <h3 class="exhibits_name">第三方的款分类好可怜跨境电商</h3>
+                    <div>
+                        <div class="goods_showprice">
+                            <div class="goods_price_1">
+                                <span class="exhibits_price">￥344</span>
+                                <span>
+                                    参考价：
+                                    <span class="exhibits_favorable"><del>￥765</del></span>
+                                </span>
+                                
+                                <span class="fr">剩余时间10小时</span>
+                            </div>
+                            <div class="goods_price_2">
+                                <span>促销：</span>
+                                <span>满件折</span>
+                                <span>满1件8.8折，满2件7.5折</span>
+                                <span><a href="">详情》</a></span>
+                            </div>
+                        </div>
+                        <div class="goods_showsite">
+                            <div>配送：</div> 
+                            <div>
+                                <span>东莞</span>
+                                <span>至</span>
+
+                            </div>
+                            <div>包邮, 24小时发货</div>
+                        </div>
+    
+                        <div class="goods_showsize">
+                            <ul>
+                                <li>
+                                    <span >颜色：</span>
+                                    <div>
+                                        <span class="exhibits_min_img"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>尺码：</span>
+                                    <div>
+                                        <span>S</span>
+                                        <span>M</span>
+                                        <span>L</span>
+                                        <span>XL</span>
+                                        <span>XXL</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>数量：</span>
+                                    <div id="goods_number">
+                                        <input type="button" value="-" id="goods_num_sub"/>
+                                        <input type="text"  id="goods_num_inport" value="1" />
+                                        <input type="button" value="+" id="goods_num_add"/>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <div>
+                                        <button class="goods_showpay">立即购买</button>
+                                        <button class="goods_showcar">加入购物车</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goods_approve fl">
+                    <div>
+                        <img src="../img/logo/datails_r_logo.png" alt="" />
+                        <p>美女动态旗舰店</p>
+                        <p>共200+件商品</p>
+                    </div>
+                    <div>
+                        <p><i class="glyphicon glyphicon-ok-sign"></i><span>金牌认证</span></p>
+                        <p><i class="glyphicon glyphicon-usd"></i><span>已缴纳保证金</span></p>
+                        <p><i class="glyphicon glyphicon-edit"></i><span>营业执照</span></p>
+                    </div>
+                    <div>
+                        <p><i class="glyphicon glyphicon-comment"></i><a>联系客服</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="datails_bottom"></div>
+
+    <!-- JS -->
+      <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/datails.js"></script>
+</body>
+</html>

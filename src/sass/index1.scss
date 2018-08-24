@@ -1,0 +1,6 @@
+// 引入变量
+@import 'var';
+
+$divcolor: #58bc58;
+$bg:#f00;
+div{background:$divcolor;border:2px solid $bg;}

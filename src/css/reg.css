@@ -1,0 +1,40 @@
+#w_reg_top{border-bottom:2px solid #FE464D;height: 80px;background:#fff;}
+.w_reg_header{overflow:hidden;padding:0 30px;}
+
+.t_logo{float:left; width: 200px;height: 60px; background:url("../img/logo/juanpilogo.png") no-repeat;}
+/*限时*/
+.t_timeSale{float:right;}
+.t_timeSale span:nth-of-type(1) a{display:inline-block; height: 70px;width: 170px; background:url("../img/t_timeSale1.png") no-repeat;}
+.t_timeSale span:nth-of-type(2) a{display:inline-block; height: 70px;width: 170px; background:url("../img/t_timeSale2.png") no-repeat;}
+.t_timeSale span:nth-of-type(3) a{display:inline-block; height: 70px;width: 170px; background:url("../img/t_timeSale3.png") no-repeat;}
+
+
+#w_regbox{background:#f5f5f5;padding-top: 30px;}
+#w_regbox .w_container980{background:#fff;border:1px solid #ddd;}
+.w_regbox_mainbox{padding: 30px;}
+.w_regbox_title{padding-top:30px;height: 65px;border-bottom:1px solid #ddd;}
+.w_regbox_title span:nth-of-type(1){padding:0 10px 0 30px;color:#f30;font-size: 16px;}
+.w_regbox_title span:nth-of-type(2){color:#666;}
+.w_regbox_title span:nth-of-type(3){float:right;padding-right: 40px;}
+.w_regbox_title span:nth-of-type(3)>a{color:#0ef;padding-left: 10px;}
+.w_regbox_mainbox{overflow:hidden;}
+
+/*表单*/
+.w_help-block{display:block;color:#eee;}
+
+
+
+.w_regmain{width: 400px;padding:20px;}
+.w_regmain_r{padding-right:30px;}
+.w_regmain_r p{margin:20px 0;}
+
+/*底部*/
+#w_reg_bottom{background:#f5f5f5;}
+#w_reg_bottom .W_container980{text-align: center;padding:60px 0;line-height: 20px;color:#ddd;}
+
+
+
+/*登录页面的样式*/
+
+#login_btn{padding:10px 50px;}
+#w_help_login{height: 16px;}

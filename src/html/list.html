@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>列表页</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/w_header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/list.css" />
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+   <div class="list_toolbar"></div>
+   <div class="list_header"></div>
+   <div class="list_r_nav"></div>
+    
+    <!-- list -->
+    <div id="w_newgoods">
+        <!-- 吸顶菜单 -->
+        <div class="ceiling_menubox">
+            <div class="w_container">
+                <ul class="ceiling_menu">
+                    <li class="menuLi_first"><a href="">今日上新</a></li>
+                    <li><a href="">女装</a></li>
+                    <li><a href="">男装</a></li>
+                    <li><a href="">鞋子</a></li>
+                    <li><a href="">箱包</a></li>
+                    <li><a href="">母婴</a></li>
+                    <li><a href="">美妆</a></li>
+                    <li><a href="">居家</a></li>
+                    <li><a href="">家纺</a></li>
+                    <li><a href="">文体</a></li>
+                    <li><a href="">美食</a></li>
+                    <li><a href="">数码</a></li>
+                    <li><a href="">电器</a></li>
+                    <li><a href="">内衣</a></li>
+                    <li><a href="">配饰</a></li>
+                    <li class="menuLi_last"><a href="">[即将上线]</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- list商品列表部分 -->
+        <div class="ceiling_menubox_msg w_container">
+        
+            <!-- 商品列表 -->
+            <ul id="w_newgoods_list" class="w_newgoods_list">
+                <li>
+                    <div>
+                        <img src="../img/goodsImg/g_huazhuang (1).jpg" alt="" />
+                        <span class="shouzang"><i></i></span>
+                    </div>
+                    <div>
+                        <span class="w_newgoods_price f14">￥645</span>
+                        <span class="w_newgoods_favorable f12"><del>￥976</del></span>
+                    </div>
+                    <div class="f12">
+                        <span class="w_newgoods_name">长度为十个数字的名字</span>
+                        <span class="w_newgoods_pricetime fr">剩余19小时</span>
+                    </div>
+                </li>
+            </ul>
+            <!-- 页码 -->
+            <div class="w_newgoods_page">
+                <span class="pagechilds">上一页</span>
+                <a class="pagechilds" href="#">1</a>
+                <a class="pagechilds" href="#">2</a>
+                <a class="pagechilds" href="#">3</a>
+                <span class="pagechilds">下一页</span>
+            </div>
+        </div>
+    </div>
+
+   <!-- 底部 -->
+   <div class="list_bottom"></div>
+
+   <!-- JS -->
+   <script type="text/javascript" src="../js/list.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+#w_newgoods{border-bottom: 3px solid #FE464D;padding-bottom: 40px;}
+.w_newgoods .w_container{background:#fff;}
+.w_newgoods_title{background:#fff;}
+
+
+
+/*吸顶菜单*/
+.ceiling_menubox{background:#fff;}
+.ceiling_menu{height: 50px;font-size: 14px;padding:15px 0;}
+.ceiling_menu li{float:left;width: 58px;height: 20px;text-align: center;}
+.ceiling_menu .menuLi_first{width: 104px;border-right: 1px solid #ddd;}
+.ceiling_menu .menuLi_last{width: 100px;}
+
+
+/*滚动吸顶样式*/
+.celiing_fixed{position:fixed;top:0;left:0;right:0;border-bottom:1px solid rgba(204,204,299,0.4);z-index: 5;}
+.ceiling_msg{margin-top:50px;}
+
+
+
+
+
+/*ul商品li*/
+.w_newgoods_list{overflow:hidden;padding-left:10px;background:#fff;font-size: 0;box-sizing: ;}
+.w_newgoods_list>li{display:inline-block;width: 230px;height: 290px;vertical-align: middle;padding:5px;margin-right:8px;margin-bottom: 10px;border:1px solid rgba(255,255,255,0);}
+.w_newgoods_list>li.liborder{border:1px solid #978B8F;}
+.w_newgoods_list>li>div{padding-bottom: 10px;}
+
+.w_newgoods_list .w_newgoods_imgbox{position:relative;}
+.w_newgoods_list>li img{width: 220px;height: 220px;}
+.w_newgoods_list>li .w_newgoods_imgbox span{position:absolute;right:20px;top:20px; font-size: 20px;color:#f00;display:none;}
+.w_newgoods_list>li:hover .w_newgoods_imgbox span{display:block;}
+.w_newgoods_list>li .w_newgoods_imgbox span>i{opacity: 0.8;}
+.w_newgoods_list .w_newgoods_price{color:#f00;padding:10px;}
+.w_newgoods_list .w_newgoods_favorable{color:#ccc;padding:10px;}
+.w_newgoods_list .w_newgoods_name{padding-left:10px;}
+.w_newgoods_list .w_newgoods_pricetime{padding:5px;color:#ccc;vertical-align: middle;}
+
+
+/*页码*/
+.w_newgoods_page{text-align: center;height: 120px;padding-top:40px;font-size: 20px;background:#fff;}
+.w_newgoods_page span{display:inline-block;width: 90px;height: 41px;border:1px solid #ccc;line-height: 40px;}
+.w_newgoods_page span:nth-of-type(1){border-radius: 20px 0 0 20px;}
+.w_newgoods_page span:nth-of-type(2){border-radius: 0 20px 20px 0;}
+.w_newgoods_page a{display:inline-block;width: 41px;height: 41px;border-bottom:1px solid #ccc;line-height: 40px;}
+.pagechilds:hover{background:#FE464D;color:#fff;}

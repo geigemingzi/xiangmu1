@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/w_header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shoppingcart.css" />
+    
+    <script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    <div class="cart_header"></div>
+    <div id="cart_logobox">
+        <div class="w_container">
+            <h1 class="cart_logo"></h1>
+        </div>
+    </div>
+    
+    <div id="cart_mainbox">
+        <div class="w_container">
+            <div class="cart_title">
+                <div>商品信息</div>
+                <div>单价/原价</div>
+                <div>数量</div>
+                <div>小计</div>
+                <div>操作</div>
+            </div>
+            <div class="cart_list">
+                <div class="cart_goods">
+                    <div><input type="checkbox" /></div>
+                    <div><img src="../img/goodsImg/g_jiafang (4).jpg" alt="" /></div>
+                    <div>
+                        <p>和东方红司法局</p>
+                        <p><span>XL，黑色</span></p>
+                        
+                    </div>
+                    <div>
+                        <span>￥65</span><span class="cart_goods_price_color"><em>/</em><span>￥34</span></span>
+                    </div>
+                    <div>
+                        <div id="goods_number">
+                            <input type="button" value="-" id="goods_num_sub"/>
+                            <input type="text"  id="goods_num_inport" value="1" />
+                            <input type="button" value="+" id="goods_num_add"/>
+                        </div>
+                    </div>
+                    <div>￥<span>5654</span></div>
+                    <div><i class="glyphicon glyphicon-trash"></i></div> 
+                </div>
+
+                <!-- <div class="cart_list_total">
+                    <div><input type="checkbox" class="cart_Allcheck"/>全选</div>
+                    <div>
+                        已选择<span class="cart_list_num">7</span>件，
+                        总额：￥<span class="cart_list_price">676.9</span>
+                        满减：￥<span class="cart_list_favorable">115.98</span>,
+                       合计（不含运费）￥<span class="cart_list_sum">560.92</span>
+                    </div>
+                    <div><button class="cart_total_btn">去结算</button></div>
+                </div> -->
+            </div>
+            <div class="cart_list_total">
+                    <div><input type="checkbox" class="cart_Allcheck"/>全选</div>
+                    
+                    <div>
+                        已选择<span class="cart_list_num">0</span>件，
+                        总额：￥<span class="cart_list_price">0</span>
+                        满减：￥<span class="cart_list_favorable">0</span>,
+                       合计（不含运费）￥<span class="cart_list_sum">0</span>
+                    </div>
+                    <div><button class="cart_total_btn">去结算</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="cart_bottom"></div>
+
+    <!-- js -->
+    <script type="text/javascript" src="../js/shoppingcart.js"></script>
+</body>
+</html>
