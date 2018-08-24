@@ -23,6 +23,7 @@
        // 获取 data-num 得到 
        var str = location.search; //=> ?data-num
        var num  = str.slice(1);//去掉 ?
+       
        // 通过data-num 发起请求获取对应数据
        $.post('../api/datails.php', {goodsidx:num},function(res){
             var res = window.eval('('+res+')');

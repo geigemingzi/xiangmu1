@@ -7,6 +7,7 @@
 
         // 获取cookie
         var goodslist =JSON.parse(Cookie.get('goodscookie'));
+        console.log(Cookie.get('w_userlist'))
         // 写入页面
         // 生成商品列表 
         create()

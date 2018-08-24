@@ -21,8 +21,14 @@
 .t_toolbar_hide{display:none;width: 94px;background:#fff;border:1px solid #ddd;border-radius:3px;position: absolute;left:0px;top:24px;}
 .t_toolbar_hide>li{padding-left:5px 0;}
 .t_toolbar_hide>li:hover{color:#FF4D4D;}
+
 /*用户信息部分*/
 .t_toolbar_user{color:#FE464D;}
+.t_toolbar_user .w_username_box{width: 100px;}
+.t_toolbar_user .w_username_box>a{margin-right: 10px;}
+.t_toolbar_user .w_username_box a:nth-of-type(2){color:#f30;}
+.t_toolbar_user .w_username_box span{padding:0 5px;}
+
 .t_toolbar_user span{font-weight: bold;padding-right:3px;}
 .t_toolbar_user .t_toolbar_hide1{border:1px solid #E21D42;}
 .t_toolbar_user .t_toolbar_hide1>li{border-bottom:1px solid #E21D42;}

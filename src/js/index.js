@@ -88,6 +88,24 @@
         });
 
 
+        // 用户登录的判断
+        // 获取 data-num 得到 
+       var user_str = location.search; //=> ?data-num
+       // var userisok = user_str.slice(1);
+
+       // if(userisok){
+       //      // 获取cookie
+       //       console.log(Cookie.get('w_userlist'))
+       // }
+
+       var user_name  = user_str.slice(1).split('=')[1];//去掉 ?
+       if(user_name.length >= 1){
+
+        // 写入页面
+        $('.w_username_box').html('<i class="glyphicon glyphicon-user"></i><span>'+user_name+'</span><i class="glyphicon glyphicon-menu-down"></i>');
+        $('.w_username_box').parent().addClass('t_ul_hide')
+       }
+
         // 点击跳转详情页
         $w_newgoods_list.on('click','li',function(e){
             // 获取商品编号

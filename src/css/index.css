@@ -7,6 +7,7 @@ body{background:#F5F5F5;}
 #t_toolbar .t_toolbar{height: 30px;}
 .t_toolbar>div{float:left;width: 80px;line-height: 30px;text-align:center;}
 
+
 /*购物车数量*/
 .car_numberbox{position:relative;}
 #car_number{position:absolute;left:68px;top:4px; width: 20px;height: 20px;border-radius: 50%;background:#f00;line-height: 20px;color:#fff;}
@@ -23,8 +24,15 @@ body{background:#F5F5F5;}
 .t_toolbar_hide{display:none;width: 94px;background:#fff;border:1px solid #ddd;border-radius:3px;position: absolute;left:0px;top:24px;}
 .t_toolbar_hide>li{padding-left:5px 0;}
 .t_toolbar_hide>li:hover{color:#FF4D4D;}
+
+
 /*用户信息部分*/
 .t_toolbar_user{color:#FE464D;}
+.t_toolbar_user .w_username_box{width: 100px;}
+.t_toolbar_user .w_username_box>a{margin-right: 10px;}
+.t_toolbar_user .w_username_box a:nth-of-type(2){color:#f30;}
+.t_toolbar_user .w_username_box span{padding:0 5px;}
+
 .t_toolbar_user span{font-weight: bold;padding-right:3px;}
 .t_toolbar_user .t_toolbar_hide1{border:1px solid #E21D42;}
 .t_toolbar_user .t_toolbar_hide1>li{border-bottom:1px solid #E21D42;}
@@ -51,7 +59,7 @@ body{background:#F5F5F5;}
 .t_seekBtn{width: 37px;height: 35px;background:#FE464D;color:#fff;}
 
 /*导航栏*/
-.t_headerNav>li{float:left;width: 104px;height: 40px;text-align: center;line-height: 40px;}
+.t_headerNav>li{float:left;z-index: 10; width: 104px;height: 40px;text-align: center;line-height: 40px;}
 .t_headerNav .t_headerNav_1{background:#FE464D;color:#fff;border-radius: 5px 5px 0 0;font-size: 16px;}
 .t_headerNav>li:hover span{color:#FE464D;}
 .t_headerNav .t_headerNav_1:hover span{color:#fff;}

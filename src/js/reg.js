@@ -7,6 +7,8 @@
         var regrepass;
         
         // 判断重名用户
+        var regbtn_isok;
+
         $('#regusername').blur(function(){
             regusername = $(this).val();
            
@@ -18,8 +20,12 @@
                 
                     $('#w_help-block').text(res.mess);
                     if(res.status){
+                        regbtn_isok = true;
                         $('#w_help-block').css('color','#58bc58');
+                       
                     }else{
+        
+                        regbtn_isok = false;
                         $('#w_help-block').css('color','#f30');
                     }
                 })
@@ -28,11 +34,16 @@
 
         // 确认密码
         $('#regrepass').blur(function(){
+            console.log(regbtn_isok);
             regpassword = $("#regpassword").val();
             regrepass = $("#regrepass").val();
             if(regrepass==regpassword){
                 $('#w_help_repass').text('');
-                $('#w_reg_btn').attr('disabled',false);
+                if(regbtn_isok){
+                    $('#w_reg_btn').attr('disabled',false);
+                }else{
+                    $('#w_reg_btn').attr('disabled',true);
+                }
             }else{
                 $('#w_help_repass').text('密码不一致').css('color','#f00');
             }
@@ -62,8 +73,10 @@
                             var res = window.eval('('+res+')');
                           
                             if(res.status == true){
+                                regbtn_isok = false;
                                  if(window.confirm("用户注册成功,是否马上登录？")){
 
+                                    window.location.href = "../html/login.html"
                                  }else{
                                      return false;
                                  }
@@ -74,8 +87,8 @@
                                     return false;
                                 }
                              }
-                           
-                     });
+                    
+                    });
                 });
 
                 
