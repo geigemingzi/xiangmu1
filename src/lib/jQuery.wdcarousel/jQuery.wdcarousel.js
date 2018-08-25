@@ -1,4 +1,6 @@
-;(function($){
+
+// 模块化
+define(['jQuery'],function($){
     jQuery.prototype.wdcarousel = function(obj){
         // 创建对象
         var Carousel = function(options){
@@ -200,79 +202,77 @@
         new Carousel(obj)
     }
 
-
-// 原生JS
-/**
- * [获取元素的非内联样式]
- * @param  {[element]} ele  [元素]
- * @param  {[String]} attr [查找的样式属性]
- * @return {[String]}      [返回attr对应的属性值]
- */
-function getCss(ele,attr){
-    var res;
-    if(getComputedStyle){
-        res = getComputedStyle(ele)[attr];
+    // 原生JS
+    /**
+     * [获取元素的非内联样式]
+     * @param  {[element]} ele  [元素]
+     * @param  {[String]} attr [查找的样式属性]
+     * @return {[String]}      [返回attr对应的属性值]
+     */
+    function getCss(ele,attr){
+        var res;
+        if(getComputedStyle){
+            res = getComputedStyle(ele)[attr];
+        }
+        else if(ele.currentStyle){
+            res = ele.currentStyle[attr];
+        }
+        else{
+            res = ele.style[attr];
+        }
+        return res;
     }
-    else if(ele.currentStyle){
-        res = ele.currentStyle[attr];
-    }
-    else{
-        res = ele.style[attr];
-    }
-    return res;
-}
-// 缓冲效果 原生JS
-/**
- * 动画函数
- * @param  {[Element]}   ele      [动画元素]
- * @param  {[Object]}   opt      [动画属性与目标值]
- * @param  {Function} callback [回调函数]
- */
-function animate(ele, opt, callback){
-    // 使用属性timerLen记录定时器数量
-    ele.timerLen = 0;
+    // 缓冲效果 原生JS
+    /**
+     * 动画函数
+     * @param  {[Element]}   ele      [动画元素]
+     * @param  {[Object]}   opt      [动画属性与目标值]
+     * @param  {Function} callback [回调函数]
+     */
+    function animate(ele, opt, callback){
+        // 使用属性timerLen记录定时器数量
+        ele.timerLen = 0;
 
-    for(var attr in opt){
-        ele.timerLen++;
-        (function(attr){
-            // 防止同名定时器覆盖
-            var timerName = attr + 'Timer';
-            var target = opt[attr];
-            // 添加前先清除同名定时器
-            clearInterval(ele[timerName]);
-            ele[timerName] = setInterval(function(){
-                // 获取当前值
-                var current = getCss(ele, attr);
-                //提取单位 
-                var unit = current.match(/[a-z]*$/)[0];
-                // 提取当前值
-                current = parseFloat(current);
-                // 计算缓冲速度
-                var speed = (target - current)/10;
-                // 针对opacity属性操作
-                if(attr === 'opacity'){
-                    speed = speed>0? 0.05 : -0.05; 
-                }else{
-                    // 避免speed 过小
-                    speed = speed>0? Math.ceil(speed) : Math.floor(speed);
-                }
-
-                current = current + speed;
-                // 目标判断
-                if(current === target){
-                    clearInterval(ele[timerName]);
-                    // 重置当前值
-                    current = target;
-                    ele.timerLen--;
-                    // 完成动画后执行回调函数
-                    if(typeof callback === 'function' && ele.timerLen === 0){
-                        callback();
+        for(var attr in opt){
+            ele.timerLen++;
+            (function(attr){
+                // 防止同名定时器覆盖
+                var timerName = attr + 'Timer';
+                var target = opt[attr];
+                // 添加前先清除同名定时器
+                clearInterval(ele[timerName]);
+                ele[timerName] = setInterval(function(){
+                    // 获取当前值
+                    var current = getCss(ele, attr);
+                    //提取单位 
+                    var unit = current.match(/[a-z]*$/)[0];
+                    // 提取当前值
+                    current = parseFloat(current);
+                    // 计算缓冲速度
+                    var speed = (target - current)/10;
+                    // 针对opacity属性操作
+                    if(attr === 'opacity'){
+                        speed = speed>0? 0.05 : -0.05; 
+                    }else{
+                        // 避免speed 过小
+                        speed = speed>0? Math.ceil(speed) : Math.floor(speed);
                     }
-                }
-                ele.style[attr] = current + unit;
-            }, 40)
-        })(attr);
-    }
-}
 
-})(jQuery);
+                    current = current + speed;
+                    // 目标判断
+                    if(current === target){
+                        clearInterval(ele[timerName]);
+                        // 重置当前值
+                        current = target;
+                        ele.timerLen--;
+                        // 完成动画后执行回调函数
+                        if(typeof callback === 'function' && ele.timerLen === 0){
+                            callback();
+                        }
+                    }
+                    ele.style[attr] = current + unit;
+                }, 40)
+            })(attr);
+        }
+    }
+});

@@ -1,6 +1,5 @@
-(function(){
-
-    jQuery($=>{
+require(['config'],function(){
+    require(['jQuery'],function($){
         $('.list_toolbar').load('w_header.html #t_toolbar');
         $('.list_header').load('w_header.html #t_header');
         $('.list_r_nav').load('w_header.html #t_r_nav');
@@ -95,5 +94,6 @@
             // 跳转页面
             window.location.href = 'datails.html?' + num;
         });
+   
     });
-})();
+});

@@ -1,0 +1,15 @@
+{
+  "name": "juanpi",
+  "version": "1.0.0",
+  "description": "模块化开发,requirejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhaodong",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

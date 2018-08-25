@@ -1,4 +1,5 @@
-;(function($){
+// 定义模块
+define(['jQuery'],function(){
     // jQuery插件扩展  对象插件
     jQuery.prototype.wdzoom = function(options){
         // 这里的this指向：实例（jQuery对象）
@@ -142,4 +143,4 @@
         return this;
     }
 
-})(jQuery);
+});
